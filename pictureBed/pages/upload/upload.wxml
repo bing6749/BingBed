@@ -1,0 +1,28 @@
+<view class="tips">
+    注意：游客每日可上传100张，单张上限4MB，如需更高额度可点右下方VIP服务了解详情。使用前请阅读
+    <navigator url='/pages/agreement/agreement' style="display: inline-block;color: #f10014;"><text>《使用协议》</text></navigator><text>。</text>
+</view>
+<view>
+    <button type="default" bindtap="didPressChooesImage">点击上传照片</button>
+</view>
+<view>
+    <image class="show-image" mode="aspectFit" src="{{imageObject.imageURL}}"></image>
+</view>
+<view>
+    <view>
+        <text style="width: 88%;word-wrap:break-word;" selectable='true'>生成的CDN路径：{{imageObject.imageURL}}</text>
+    </view>
+    <button type="mini" bindtap="copyImageUrl">一键复制</button>
+</view>
+<view>
+    <movable-area class="movable_area">
+        <movable-view class="movable_view" x="580rpx" y="1050rpx" direction="all">
+            <navigator url='/pages/VIP/vip' style="display: inline-block;color: #f10014;">
+                <button plain="true" type="default" style="border-style: none; width: 50px;padding: 4px;">
+                    <image src="/images/123.png" style="width: 40px;height: 40px;margin-left: 2px;"></image>
+                </button>
+            </navigator>
+        </movable-view>
+    </movable-area>
+</view>
+<view class="footer">Copyright © 2022 PictureBed 浙ICP备2021040600号 Designed by BING</view>
